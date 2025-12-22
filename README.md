@@ -1,51 +1,59 @@
-# Advent of Code 2025
+# Advent of Code 2025 🎄
 
-This repository contains solutions for **Advent of Code 2025**, organized by day. Each day has:
+My solutions for [Advent of Code 2025](https://adventofcode.com/2025) written in Python.
 
-* `part1.py` – solution to Part 1
-* `part2.py` – solution to Part 2
-* `utils.py` – any helper logic shared by parts
-* `README.md` – day-specific explanation
-* Corresponding input files in the `inputs/` directory
+The goal of this repository is to solve the daily puzzles with a focus on **clean code**, **algorithmic efficiency** (Time/Space complexity), and **testability**. Each solution includes integrated unit tests and docstrings explaining the mathematical logic used.
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
-```
-advent-of-code-2025/
-├── day01/
-│   ├── part1.py
-│   ├── part2.py
-│   ├── utils.py
-│   ├── README.md
-│   └── __init__.py
-├── inputs/
-│   └── day01.txt
-├── tests/
-│   └── test_day01.py
-├── README.md          # (this file)
-└── .gitignore
-```
+The project is structured to keep solutions self-contained. Each day's script includes the solution logic, complexity analysis, and unit tests.
 
-## ▶️ Running Any Day
+```text
+.
+├── inputs/             # Directory for puzzle input files (ignored by git)
+│   └── day_01.txt
+├── day_01.py           # Solution code with integrated tests
+├── day_02.py
+├── ...
+└── README.md
 
-Use the Python module runner:
+## 🚀 How to Run
+
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/YOUR_USERNAME/advent-of-code-2025.git](https://github.com/YOUR_USERNAME/advent-of-code-2025.git)
+cd advent-of-code-2025
 
 ```
-python -m dayXX.part1 inputs/dayXX.txt
-python -m dayXX.part2 inputs/dayXX.txt
-```
 
-Example for Day 01:
 
-```
-python -m day01.part1 inputs/day01.txt --start 50
-python -m day01.part2 inputs/day01.txt --start 50
-```
-
-## 🧪 Running Tests
-
-If using `pytest`:
+2. **Setup Inputs:**
+Create an `inputs` folder in the root directory. Download your specific puzzle input from the Advent of Code website and save it as `day_XX.txt`.
+```bash
+mkdir inputs
+# Save your Day 1 input as inputs/day_01.txt
 
 ```
-pytest -q
+
+
+3. **Run a Solution:**
+Run the python file for the specific day. The script will automatically run unit tests first. If tests pass, it will compute the solution for your input file.
+```bash
+python day_01.py
+
 ```
+
+
+## 🛠️ Design Philosophy
+
+* **Standard Library Only:** Solutions rely on Python's standard library to reduce external dependencies and complexity.
+* **Integrated Testing:** Every file contains a `run_tests()` function that validates logic against the sample data provided in the problem description before attempting the real input.
+* **Performance:** Where possible, solutions avoid brute-force simulation in favor of mathematical optimization (e.g., using modular arithmetic instead of iterative loops).
+
+## ⚠️ Note on Inputs
+
+Puzzle inputs are not included in this repository to respect Advent of Code's [copyright and rules](https://adventofcode.com/2025/about). Please log in to the official site to retrieve your unique input data.
+
+---
+
+**Happy Coding!**

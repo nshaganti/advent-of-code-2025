@@ -1,3 +1,26 @@
+# --- Advent of Code Specific ---
+inputs/
+*.txt
+
+# --- Python ---
 __pycache__/
-.venv/
-*.pyc
+*.py[cod]
+*$py.class
+
+# --- Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
