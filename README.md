@@ -16,6 +16,7 @@ The project is structured to keep solutions self-contained. Each day's script in
 ├── day_02.py
 ├── ...
 └── README.md
+```
 
 ## 🚀 How to Run
 
@@ -46,7 +47,7 @@ python day_01.py
 
 ## 🛠️ Design Philosophy
 
-* **Standard Library Only:** Solutions rely on Python's standard library to reduce external dependencies and complexity.
+* **Standard Library Only (Well, mostly!):** Solutions rely on Python's standard library (except for Day 10 which needed numpy & scipy) to reduce external dependencies and complexity.
 * **Integrated Testing:** Every file contains a `run_tests()` function that validates logic against the sample data provided in the problem description before attempting the real input.
 * **Performance:** Where possible, solutions avoid brute-force simulation in favor of mathematical optimization (e.g., using modular arithmetic instead of iterative loops).
 
