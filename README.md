@@ -22,7 +22,7 @@ The project is structured to keep solutions self-contained. Each day's script in
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/YOUR_USERNAME/advent-of-code-2025.git](https://github.com/YOUR_USERNAME/advent-of-code-2025.git)
+git clone [https://github.com/nshaganti/advent-of-code-2025.git](https://github.com/nshaganti/advent-of-code-2025.git)
 cd advent-of-code-2025
 
 ```
